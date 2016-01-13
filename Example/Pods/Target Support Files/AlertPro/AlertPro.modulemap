@@ -1,0 +1,6 @@
+framework module AlertPro {
+  umbrella header "AlertPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

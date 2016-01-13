@@ -1,0 +1,14 @@
+PODS:
+  - AlertPro (0.1.0)
+
+DEPENDENCIES:
+  - AlertPro (from `../`)
+
+EXTERNAL SOURCES:
+  AlertPro:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AlertPro: c22b6b82d3f7b076c3d56cbe8481904301137134
+
+COCOAPODS: 0.39.0

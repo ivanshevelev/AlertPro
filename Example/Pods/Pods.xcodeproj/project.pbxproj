@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FB233AAFC971AFB839CA5DA6CE3DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		08104BF06E1CD18DE202B94A9AB6DA91 /* UIViewController+HRAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C2A850307D747DF511E355B7357B1F /* UIViewController+HRAlertViewController.m */; };
+		1A335B367E260DBCD6A6ED08AB2FD957 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2FC413F121777CE72C2637C1DE438275 /* AlertPro.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 673A44BA16809CB1488BA05C12BC8186 /* AlertPro.bundle */; };
+		3288903CF4BF398D62EAB449B4B83B19 /* Pods-AlertPro_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D7D3910244AAD06058E95A2EC566E9 /* Pods-AlertPro_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		349313B0C46A5C99B5C26D07114A69F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		8C4C4E9F4D8F8257013C467A4BEA8382 /* Pods-AlertPro_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6303D22BABFB5FB7A8D88238F4D9E /* Pods-AlertPro_Tests-dummy.m */; };
+		ABA099EC4B7227E9E3A8C4CEAD140AA6 /* UIViewController+HRAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF61024D5F01103FE67A48EF3AE68556 /* UIViewController+HRAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C8A4B5F9156A7662901B49797DE317 /* AlertPro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1708B2204C6FBA882C1842FCB4FD7974 /* AlertPro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C34EE1878BEB80F965B4DC0240A98898 /* AlertPro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D53A05FCE4198EBCD8A78FDFC59B530 /* AlertPro-dummy.m */; };
+		CE47D511272D307AF4EA0DE655705CE2 /* Pods-AlertPro_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 097D6010D39F2BACEC70EFAC2A976C40 /* Pods-AlertPro_Example-dummy.m */; };
+		DFDF68703A044B406D0C72D32D44999F /* Pods-AlertPro_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C6796D831EC84B0A7FD72671CE3037 /* Pods-AlertPro_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21FAC37110BD29258C0DA5D93B79564B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF519DEF131F874D48CEB3A18ADB2574;
+			remoteInfo = AlertPro;
+		};
+		873344AA7EC00CE04C603B43E97BA6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF519DEF131F874D48CEB3A18ADB2574;
+			remoteInfo = AlertPro;
+		};
+		E9B087E9D896931BE7D7BA1710D7D13E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32F298F8C7304CC0CA48788308006CD;
+			remoteInfo = "AlertPro-AlertPro";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0166ACFECE3BC9954B29A451D1BAD0D5 /* Pods-AlertPro_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AlertPro_Example.modulemap"; sourceTree = "<group>"; };
+		018631B1874B735B76AD3C040C7FC802 /* Pods-AlertPro_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlertPro_Example-resources.sh"; sourceTree = "<group>"; };
+		03629B19849094A7CF60090EEBA0E01E /* Pods-AlertPro_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlertPro_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		052D0C7EF323154295B7BA3F0F46C698 /* Pods-AlertPro_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlertPro_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		097D6010D39F2BACEC70EFAC2A976C40 /* Pods-AlertPro_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AlertPro_Example-dummy.m"; sourceTree = "<group>"; };
+		109BD07FA5201FBC8B613FA701C6A8E4 /* Pods-AlertPro_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlertPro_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1708B2204C6FBA882C1842FCB4FD7974 /* AlertPro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertPro-umbrella.h"; sourceTree = "<group>"; };
+		23171A55DE1613E5CBB6F1DFF161D0C4 /* Pods-AlertPro_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlertPro_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27D10FE9A1FF634C93821227F4B8CAAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29DAD0E96EF57888711F634F3670D26A /* AlertPro-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertPro-prefix.pch"; sourceTree = "<group>"; };
+		2AE47795ED18D05F328A1B96D536EE0D /* Pods-AlertPro_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlertPro_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		317DFDF272467EBA7C84CFA973830AC9 /* Pods-AlertPro_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertPro_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		38079BB50E2CA5FA245B597895C30B17 /* Pods_AlertPro_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertPro_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42D7D3910244AAD06058E95A2EC566E9 /* Pods-AlertPro_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlertPro_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4F32E8804709859361D410AA393F4240 /* AlertPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB6303D22BABFB5FB7A8D88238F4D9E /* Pods-AlertPro_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AlertPro_Tests-dummy.m"; sourceTree = "<group>"; };
+		673A44BA16809CB1488BA05C12BC8186 /* AlertPro.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertPro.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6998E99C2F72EB977F650D95AE145D89 /* Pods-AlertPro_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AlertPro_Tests.modulemap"; sourceTree = "<group>"; };
+		776C1F25F69120E00CC994737DF90B08 /* Pods_AlertPro_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertPro_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C691D0101CE9D48518735630B228ECA /* AlertPro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlertPro.modulemap; sourceTree = "<group>"; };
+		7D2EAF7FAEB574512C322EDE371E1D14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C6258B0FD308674E165C1E07712D32 /* Pods-AlertPro_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlertPro_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D53A05FCE4198EBCD8A78FDFC59B530 /* AlertPro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertPro-dummy.m"; sourceTree = "<group>"; };
+		9FD6E431E8F6A76C185CBC7110B6D8D4 /* Pods-AlertPro_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertPro_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A270AC8B493C2689CAE0BB15CF0359B8 /* Pods-AlertPro_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertPro_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertPro.xcconfig; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CEDAB485C8130396837701FCB6BC826B /* Pods-AlertPro_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlertPro_Tests-resources.sh"; sourceTree = "<group>"; };
+		D53B12571C55344FE4EB780FFE9698CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C2A850307D747DF511E355B7357B1F /* UIViewController+HRAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HRAlertViewController.m"; sourceTree = "<group>"; };
+		E2C6796D831EC84B0A7FD72671CE3037 /* Pods-AlertPro_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlertPro_Example-umbrella.h"; sourceTree = "<group>"; };
+		E65570807FE5E1CFAC902CFCAE755419 /* Pods-AlertPro_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertPro_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EF61024D5F01103FE67A48EF3AE68556 /* UIViewController+HRAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HRAlertViewController.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81A2CA8E2F38543D4AF5FD9C2D067A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349313B0C46A5C99B5C26D07114A69F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED74E276C0E89499161086F86917F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A335B367E260DBCD6A6ED08AB2FD957 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C130C013F7C0F9B85AEA3351283D5E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FB233AAFC971AFB839CA5DA6CE3DD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED57D585D45D5C3F61BC6670207765D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C1A4CE8F26D96A93059875CD0ED6751 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C691D0101CE9D48518735630B228ECA /* AlertPro.modulemap */,
+				B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */,
+				9D53A05FCE4198EBCD8A78FDFC59B530 /* AlertPro-dummy.m */,
+				29DAD0E96EF57888711F634F3670D26A /* AlertPro-prefix.pch */,
+				1708B2204C6FBA882C1842FCB4FD7974 /* AlertPro-umbrella.h */,
+				7D2EAF7FAEB574512C322EDE371E1D14 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AlertPro";
+			sourceTree = "<group>";
+		};
+		2BDB4FEE6639E14027F12E9999F98F36 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC5AE56B178F5508FCA468F90D839304 /* AlertPro */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		372FDFEFAB53144F15E6D50885BDAB41 /* Pods-AlertPro_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D53B12571C55344FE4EB780FFE9698CC /* Info.plist */,
+				6998E99C2F72EB977F650D95AE145D89 /* Pods-AlertPro_Tests.modulemap */,
+				2AE47795ED18D05F328A1B96D536EE0D /* Pods-AlertPro_Tests-acknowledgements.markdown */,
+				052D0C7EF323154295B7BA3F0F46C698 /* Pods-AlertPro_Tests-acknowledgements.plist */,
+				5FB6303D22BABFB5FB7A8D88238F4D9E /* Pods-AlertPro_Tests-dummy.m */,
+				03629B19849094A7CF60090EEBA0E01E /* Pods-AlertPro_Tests-frameworks.sh */,
+				CEDAB485C8130396837701FCB6BC826B /* Pods-AlertPro_Tests-resources.sh */,
+				42D7D3910244AAD06058E95A2EC566E9 /* Pods-AlertPro_Tests-umbrella.h */,
+				9FD6E431E8F6A76C185CBC7110B6D8D4 /* Pods-AlertPro_Tests.debug.xcconfig */,
+				317DFDF272467EBA7C84CFA973830AC9 /* Pods-AlertPro_Tests.release.xcconfig */,
+			);
+			name = "Pods-AlertPro_Tests";
+			path = "Target Support Files/Pods-AlertPro_Tests";
+			sourceTree = "<group>";
+		};
+		57952ED989107A7C2B86DD3CF47DB3AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673A44BA16809CB1488BA05C12BC8186 /* AlertPro.bundle */,
+				4F32E8804709859361D410AA393F4240 /* AlertPro.framework */,
+				38079BB50E2CA5FA245B597895C30B17 /* Pods_AlertPro_Example.framework */,
+				776C1F25F69120E00CC994737DF90B08 /* Pods_AlertPro_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				2BDB4FEE6639E14027F12E9999F98F36 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				57952ED989107A7C2B86DD3CF47DB3AD /* Products */,
+				F6D58F1EE7AF90432AEF07D968A35941 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F3A02D7975219720241AE2D33ECD29C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B8698BC965B36882F7FAB111B4B22AEF /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		B8698BC965B36882F7FAB111B4B22AEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF61024D5F01103FE67A48EF3AE68556 /* UIViewController+HRAlertViewController.h */,
+				D6C2A850307D747DF511E355B7357B1F /* UIViewController+HRAlertViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD1B567D67F9B063E11A67250A58CD5 /* Pods-AlertPro_Example */ = {
+			isa = PBXGroup;
+			children = (
+				27D10FE9A1FF634C93821227F4B8CAAA /* Info.plist */,
+				0166ACFECE3BC9954B29A451D1BAD0D5 /* Pods-AlertPro_Example.modulemap */,
+				23171A55DE1613E5CBB6F1DFF161D0C4 /* Pods-AlertPro_Example-acknowledgements.markdown */,
+				86C6258B0FD308674E165C1E07712D32 /* Pods-AlertPro_Example-acknowledgements.plist */,
+				097D6010D39F2BACEC70EFAC2A976C40 /* Pods-AlertPro_Example-dummy.m */,
+				109BD07FA5201FBC8B613FA701C6A8E4 /* Pods-AlertPro_Example-frameworks.sh */,
+				018631B1874B735B76AD3C040C7FC802 /* Pods-AlertPro_Example-resources.sh */,
+				E2C6796D831EC84B0A7FD72671CE3037 /* Pods-AlertPro_Example-umbrella.h */,
+				A270AC8B493C2689CAE0BB15CF0359B8 /* Pods-AlertPro_Example.debug.xcconfig */,
+				E65570807FE5E1CFAC902CFCAE755419 /* Pods-AlertPro_Example.release.xcconfig */,
+			);
+			name = "Pods-AlertPro_Example";
+			path = "Target Support Files/Pods-AlertPro_Example";
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6D58F1EE7AF90432AEF07D968A35941 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1B567D67F9B063E11A67250A58CD5 /* Pods-AlertPro_Example */,
+				372FDFEFAB53144F15E6D50885BDAB41 /* Pods-AlertPro_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC5AE56B178F5508FCA468F90D839304 /* AlertPro */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A02D7975219720241AE2D33ECD29C /* Pod */,
+				1C1A4CE8F26D96A93059875CD0ED6751 /* Support Files */,
+			);
+			name = AlertPro;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		557CF47930200E03E5D83404231237A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C8A4B5F9156A7662901B49797DE317 /* AlertPro-umbrella.h in Headers */,
+				ABA099EC4B7227E9E3A8C4CEAD140AA6 /* UIViewController+HRAlertViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEF87A9B9FBA0C0AD24544C322696D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFDF68703A044B406D0C72D32D44999F /* Pods-AlertPro_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE147796F1F5532199611C12D9F4A3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3288903CF4BF398D62EAB449B4B83B19 /* Pods-AlertPro_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7609E8136221728A7F8CC0D2424EE933 /* Pods-AlertPro_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0675D05461C7C4733A0E3697A2D3A2 /* Build configuration list for PBXNativeTarget "Pods-AlertPro_Example" */;
+			buildPhases = (
+				6D6B0454929563CF40441C8A087AF7DB /* Sources */,
+				AED74E276C0E89499161086F86917F41 /* Frameworks */,
+				6FEF87A9B9FBA0C0AD24544C322696D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				391148DD5BA9279D4154B7EBED2A4CE1 /* PBXTargetDependency */,
+			);
+			name = "Pods-AlertPro_Example";
+			productName = "Pods-AlertPro_Example";
+			productReference = 38079BB50E2CA5FA245B597895C30B17 /* Pods_AlertPro_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8951B4060BEB3CC6AB05979DFE215C2E /* Pods-AlertPro_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112334499D31E17D9BB02F977B32CEDD /* Build configuration list for PBXNativeTarget "Pods-AlertPro_Tests" */;
+			buildPhases = (
+				4F08F303E069A77D35EF3DE4F58CB437 /* Sources */,
+				C130C013F7C0F9B85AEA3351283D5E83 /* Frameworks */,
+				ABE147796F1F5532199611C12D9F4A3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B0EDB5E6787D188001640076BB00AB0 /* PBXTargetDependency */,
+			);
+			name = "Pods-AlertPro_Tests";
+			productName = "Pods-AlertPro_Tests";
+			productReference = 776C1F25F69120E00CC994737DF90B08 /* Pods_AlertPro_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A32F298F8C7304CC0CA48788308006CD /* AlertPro-AlertPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700C69C8CCC8E49FDA246BA88CAE4CC3 /* Build configuration list for PBXNativeTarget "AlertPro-AlertPro" */;
+			buildPhases = (
+				85701A7AAC2334F1C89FC28698F27731 /* Sources */,
+				ED57D585D45D5C3F61BC6670207765D6 /* Frameworks */,
+				5EF6118404E4CC8639080F98966C4DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlertPro-AlertPro";
+			productName = "AlertPro-AlertPro";
+			productReference = 673A44BA16809CB1488BA05C12BC8186 /* AlertPro.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AF519DEF131F874D48CEB3A18ADB2574 /* AlertPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DF09C04FFE908FEFA06A74ED437036 /* Build configuration list for PBXNativeTarget "AlertPro" */;
+			buildPhases = (
+				9EF0E4BC39A6DE12CDF009C5DCDFE0F4 /* Sources */,
+				81A2CA8E2F38543D4AF5FD9C2D067A3B /* Frameworks */,
+				1F55290744E8B17985A182D1EFD0B707 /* Resources */,
+				557CF47930200E03E5D83404231237A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F58BD3FC6362234FE18C210445405C83 /* PBXTargetDependency */,
+			);
+			name = AlertPro;
+			productName = AlertPro;
+			productReference = 4F32E8804709859361D410AA393F4240 /* AlertPro.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 57952ED989107A7C2B86DD3CF47DB3AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF519DEF131F874D48CEB3A18ADB2574 /* AlertPro */,
+				A32F298F8C7304CC0CA48788308006CD /* AlertPro-AlertPro */,
+				7609E8136221728A7F8CC0D2424EE933 /* Pods-AlertPro_Example */,
+				8951B4060BEB3CC6AB05979DFE215C2E /* Pods-AlertPro_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F55290744E8B17985A182D1EFD0B707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC413F121777CE72C2637C1DE438275 /* AlertPro.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF6118404E4CC8639080F98966C4DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F08F303E069A77D35EF3DE4F58CB437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4C4E9F4D8F8257013C467A4BEA8382 /* Pods-AlertPro_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6B0454929563CF40441C8A087AF7DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47D511272D307AF4EA0DE655705CE2 /* Pods-AlertPro_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85701A7AAC2334F1C89FC28698F27731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF0E4BC39A6DE12CDF009C5DCDFE0F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34EE1878BEB80F965B4DC0240A98898 /* AlertPro-dummy.m in Sources */,
+				08104BF06E1CD18DE202B94A9AB6DA91 /* UIViewController+HRAlertViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		391148DD5BA9279D4154B7EBED2A4CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertPro;
+			target = AF519DEF131F874D48CEB3A18ADB2574 /* AlertPro */;
+			targetProxy = 21FAC37110BD29258C0DA5D93B79564B /* PBXContainerItemProxy */;
+		};
+		6B0EDB5E6787D188001640076BB00AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertPro;
+			target = AF519DEF131F874D48CEB3A18ADB2574 /* AlertPro */;
+			targetProxy = 873344AA7EC00CE04C603B43E97BA6F2 /* PBXContainerItemProxy */;
+		};
+		F58BD3FC6362234FE18C210445405C83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlertPro-AlertPro";
+			target = A32F298F8C7304CC0CA48788308006CD /* AlertPro-AlertPro */;
+			targetProxy = E9B087E9D896931BE7D7BA1710D7D13E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		46C5E7882165836992FB2A50BA75A41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlertPro/AlertPro-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertPro/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlertPro/AlertPro.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AlertPro;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F28EA54AEE7A9359B56FD985C9BC3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlertPro/AlertPro-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertPro/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlertPro/AlertPro.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AlertPro;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59A9766DC3658A94DA6E467548BD6ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AlertPro;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		ACA6F28F79AD4F5756D2E0276DF69CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E65570807FE5E1CFAC902CFCAE755419 /* Pods-AlertPro_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AlertPro_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlertPro_Example/Pods-AlertPro_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AlertPro_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BED31A8B0A6700DBB600DD268C40F053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD6E431E8F6A76C185CBC7110B6D8D4 /* Pods-AlertPro_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AlertPro_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlertPro_Tests/Pods-AlertPro_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AlertPro_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4FA83A49852D50F6EF2801C6E9AACEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317DFDF272467EBA7C84CFA973830AC9 /* Pods-AlertPro_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AlertPro_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlertPro_Tests/Pods-AlertPro_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AlertPro_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D417BAC5E18DFD00CA648F881783FAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A270AC8B493C2689CAE0BB15CF0359B8 /* Pods-AlertPro_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AlertPro_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlertPro_Example/Pods-AlertPro_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AlertPro_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F166E4BD3156D476D80C0C8C74A69981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3175D737B6410CA2E7C0E8ED279DB59 /* AlertPro.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AlertPro;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		112334499D31E17D9BB02F977B32CEDD /* Build configuration list for PBXNativeTarget "Pods-AlertPro_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED31A8B0A6700DBB600DD268C40F053 /* Debug */,
+				C4FA83A49852D50F6EF2801C6E9AACEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700C69C8CCC8E49FDA246BA88CAE4CC3 /* Build configuration list for PBXNativeTarget "AlertPro-AlertPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A9766DC3658A94DA6E467548BD6ED8 /* Debug */,
+				F166E4BD3156D476D80C0C8C74A69981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80DF09C04FFE908FEFA06A74ED437036 /* Build configuration list for PBXNativeTarget "AlertPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C5E7882165836992FB2A50BA75A41F /* Debug */,
+				4F28EA54AEE7A9359B56FD985C9BC3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0675D05461C7C4733A0E3697A2D3A2 /* Build configuration list for PBXNativeTarget "Pods-AlertPro_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D417BAC5E18DFD00CA648F881783FAAF /* Debug */,
+				ACA6F28F79AD4F5756D2E0276DF69CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

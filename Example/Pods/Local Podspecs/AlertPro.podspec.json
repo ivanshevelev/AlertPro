@@ -1,0 +1,25 @@
+{
+  "name": "AlertPro",
+  "version": "0.1.0",
+  "summary": "A short description of AlertPro.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AlertPro",
+  "license": "MIT",
+  "authors": {
+    "Ivan Shevelev": "ivan.shevelev@sibers.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AlertPro.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "AlertPro": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
