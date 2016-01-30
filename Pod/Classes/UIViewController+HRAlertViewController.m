@@ -167,18 +167,37 @@
                      completion:nil];
 }
 
-#pragma mark - Private
+-(void)hrShowActionSheetWithoutCancelWithTitles:(nullable NSArray<NSString *> *)titles
+                          popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                     sourceView:(nullable UIView *)sourceView
+                                     sourceRect:(CGRect)rect
+                                  actionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+    UIAlertController *alertController = [self hrAlertControllerWithTitle:nil
+                                                                  message:nil
+                                                            buttonsTitles:titles
+                                                    popoverArrowDirection:direction
+                                                               sourceView:sourceView
+                                                               sourceRect:rect
+                                                         andActionHandler:handler];
+    [self presentViewController:alertController
+                       animated:YES
+                     completion:nil];
+}
 
 -(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
                                          message:(NSString *)message
                                    buttonsTitles:(NSArray *)titles
-                                 andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+                           popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                      sourceView:(UIView *)sourceView
+                                      sourceRect:(CGRect)sourceRect
+                                andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
     for (NSString *title in titles) {
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:title
-                                                              style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                                              style:UIAlertActionStyleDefault
+                                                            handler:^(UIAlertAction * _Nonnull action) {
                                                                   if (handler) {
                                                                       handler([alertController.actions indexOfObject:action], action.title);
                                                                   }
@@ -190,19 +209,28 @@
         [alertController setModalPresentationStyle:UIModalPresentationPopover];
         UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
         if (popPresenter) {
-            CGRect rect = self.view.frame;
-            
-            rect.origin.x = self.view.frame.size.width / 2 - 100;
-            rect.origin.y = self.view.frame.size.height / 2 - 100;
-            rect.size.width = 200;
-            rect.size.height = 200;
-            popPresenter.sourceView = self.view;
-            popPresenter.sourceRect = rect;
-            popPresenter.permittedArrowDirections = UIPopoverArrowDirectionUnknown;
-            [popPresenter setPermittedArrowDirections:0];
+            popPresenter.sourceView = sourceView;
+            popPresenter.sourceRect = sourceRect;
+            popPresenter.permittedArrowDirections = direction;
         }
     }
     return alertController;
+}
+
+#pragma mark - Private
+
+-(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
+                                         message:(NSString *)message
+                                   buttonsTitles:(NSArray *)titles
+                                 andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+    CGRect rect = CGRectMake(self.view.frame.size.width / 2 - 100, self.view.frame.size.height / 2 - 100, 200, 200);
+    return [self hrAlertControllerWithTitle:title
+                                    message:message
+                              buttonsTitles:titles
+                      popoverArrowDirection:0 //Apple. WTF with u?
+                                 sourceView:self.view
+                                 sourceRect:rect
+                           andActionHandler:handler];
 }
 
 -(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t7A-De-00H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t7A-De-00H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -339,6 +339,29 @@
                                                 <constraint firstAttribute="trailing" secondItem="tNk-uT-V24" secondAttribute="trailing" id="9u0-F9-n9H"/>
                                                 <constraint firstItem="tNk-uT-V24" firstAttribute="top" secondItem="RXW-8L-h2I" secondAttribute="top" id="gSr-dZ-mfM"/>
                                                 <constraint firstItem="tNk-uT-V24" firstAttribute="leading" secondItem="RXW-8L-h2I" secondAttribute="leading" id="sxp-iE-ojC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LWy-NJ-bv9">
+                                        <rect key="frame" x="0.0" y="717" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWy-NJ-bv9" id="3KZ-0J-3Y7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abc-0H-pLe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                    <state key="normal" title="iPad Test"/>
+                                                    <connections>
+                                                        <action selector="iPadTestButtonTapped:" destination="t7A-De-00H" eventType="touchUpInside" id="Jun-UZ-BvF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Abc-0H-pLe" firstAttribute="top" secondItem="3KZ-0J-3Y7" secondAttribute="top" id="Hph-dB-IKg"/>
+                                                <constraint firstItem="Abc-0H-pLe" firstAttribute="leading" secondItem="3KZ-0J-3Y7" secondAttribute="leading" id="g8l-E6-iIL"/>
+                                                <constraint firstAttribute="trailing" secondItem="Abc-0H-pLe" secondAttribute="trailing" id="lQ8-ty-Q0x"/>
+                                                <constraint firstAttribute="bottom" secondItem="Abc-0H-pLe" secondAttribute="bottom" id="zH4-qH-lG5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

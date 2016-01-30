@@ -59,7 +59,8 @@ static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerus
 }
 
 -(IBAction)errorTitleMessageAndHandler:(id)sender {
-    [self hrShowErrorAlertWithMessage:@"Message" andHandler:^(UIAlertAction * _Nullable action) {
+    [self hrShowErrorAlertWithMessage:@"Message"
+                           andHandler:^(UIAlertAction * _Nullable action) {
         [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", action.title]];
     }];
 }
@@ -70,7 +71,8 @@ static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerus
 }
 
 -(IBAction)successTitleMessageAndHandler:(id)sender {
-    [self hrShowSuccessAlertWithMessage:@"Message" andHandler:^(UIAlertAction * _Nullable action) {
+    [self hrShowSuccessAlertWithMessage:@"Message"
+                             andHandler:^(UIAlertAction * _Nullable action) {
         [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", action.title]];
     }];
 }
@@ -93,7 +95,8 @@ static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerus
 - (IBAction)titleMessageButtonTitlesAndHandlerAndCancelHandlerButtonTapped:(id)sender {
     [self hrShowActionSheetWithTitle:@"Title"
                              message:@"Message"
-                        buttonTitles:@[@"First", @"Second"] actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
+                        buttonTitles:@[@"First", @"Second"]
+                       actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
         [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", title]];
     } andCancelActionHandler:^{
         [self showHandleAlertWithMessage:@"Cancel button is tapped"];
@@ -101,7 +104,9 @@ static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerus
 }
 
 - (IBAction)titleButtonTitlesAndHandlerAndCancelHandlerButtonTapped:(id)sender {
-    [self hrShowActionSheetWithTitle:@"Title" buttonTitles:@[@"First", @"Second"] actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
+    [self hrShowActionSheetWithTitle:@"Title"
+                        buttonTitles:@[@"First", @"Second"]
+                       actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
         [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", title]];
     } andCancelActionHandler:^{
         [self showHandleAlertWithMessage:@"Cancel button is tapped"];
@@ -126,9 +131,21 @@ static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerus
 
 
 - (IBAction)buttonTitlesAndHandlerWithoutCancelButtonButtonTapped:(id)sender {
-    [self hrShowActionSheetWithoutCancelWithTitles:@[@"First", @"Second"] actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
+    [self hrShowActionSheetWithoutCancelWithTitles:@[@"First", @"Second"]
+                                     actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
         [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", title]];
     }];
 }
+
+- (IBAction)iPadTestButtonTapped:(UIButton *)sender {
+    [self hrShowActionSheetWithoutCancelWithTitles:@[@"First", @"Second"]
+                             popoverArrowDirection:UIPopoverArrowDirectionDown
+                                        sourceView:sender
+                                        sourceRect:CGRectMake(sender.center.x - 100, sender.center.y - 20, 200, 200)
+                                     actionHandler:^(NSInteger indexOfAction, NSString * _Nonnull title) {
+        [self showHandleAlertWithMessage:[NSString stringWithFormat:@"Tapped button with name: '%@'", title]];
+    }];
+}
+
 
 @end

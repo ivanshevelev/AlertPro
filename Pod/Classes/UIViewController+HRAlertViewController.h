@@ -133,7 +133,6 @@
  *  Category for easy showing UIAlertController with SheetStyle and handle.
  *
  *  @warning Category in implementation use a "Cancel" NSLocalizedString. Please implement translate of the word in your Localizable.strings file.
- *  @warning For iPad: action sheet opens in center of view controller's view with 200x200 size.
  *
  */
 @interface UIViewController (HRActionSheet)
@@ -196,7 +195,6 @@
  *  @param cancelActionHandler Block, which called if cancel button in action sheet is tapped.
  *
  *  @warning Category in implementation use a "Cancel" NSLocalizedString. Please implement translate of the word in your Localizable.strings file.
- *  @warning For iPad: action sheet opens in center of view controller's view with 200x200 size.
  *
  */
 -(void)hrShowActionSheetWithTitles:(nullable NSArray<NSString *> *)titles
@@ -210,7 +208,6 @@
  *  @param handler             Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
  *
  *  @warning Category in implementation use a "Cancel" NSLocalizedString. Please implement translate of the word in your Localizable.strings file.
- *  @warning For iPad: action sheet opens in center of view controller's view with 200x200 size.
  *
  */
 -(void)hrShowActionSheetWithTitles:(nullable NSArray<NSString *> *)titles
@@ -222,10 +219,45 @@
  *  @param titles              NSArray<NSString *> * with titles of buttons.
  *  @param handler             Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
  *
- *  @warning For iPad: action sheet opens in center of view controller's view with 200x200 size.
  *
  */
 -(void)hrShowActionSheetWithoutCancelWithTitles:(nullable NSArray<NSString *> *)titles
                                   actionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
+
+/**
+ *  Method for showing UIAlertController with SheetStyle without default "Cancel" button. Method created specialy for iPad.
+ *
+ *  @param titles     NSArray<NSString *> * with titles of buttons.
+ *  @param direction  Arrow Direction in popover.
+ *  @param sourceView Source View in popover.
+ *  @param sourceView Source Rect in popover.
+ *  @param handler    Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
+ */
+-(void)hrShowActionSheetWithoutCancelWithTitles:(nullable NSArray<NSString *> *)titles
+                          popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                     sourceView:(nullable UIView *)sourceView
+                                     sourceRect:(CGRect)rect
+                                  actionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
+
+/**
+ *  Method for creating UIAlertController with SheetStyle without default "Cancel" button. Method created specialy for iPad.
+ *
+ *  @param title      Title property in alert.
+ *  @param message    Desription property in alert.
+ *  @param titles     NSArray<NSString *> * with titles of buttons.
+ *  @param direction  Arrow Direction in popover.
+ *  @param sourceView Source View in popover.
+ *  @param sourceRect Source Rect in popover.
+ *  @param handler    Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
+ *
+ *  @return UIAlertController instance.
+ */
+-(nonnull UIAlertController *)hrAlertControllerWithTitle:(nullable NSString *)title
+                                                 message:(nullable NSString *)message
+                                           buttonsTitles:(nullable NSArray *)titles
+                                   popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                              sourceView:(nullable UIView *)sourceView
+                                              sourceRect:(CGRect)rect
+                                        andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
 
 @end
