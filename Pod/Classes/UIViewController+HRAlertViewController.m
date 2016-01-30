@@ -10,10 +10,10 @@
 
 @implementation UIViewController (HRAlertView)
 
--(void)hrShowAlertWithTitle:(nullable NSString *)title
-                    message:(nullable NSString *)message
-              buttonsTitles:(NSArray<NSString *> *)buttonTitles
-                 andHandler:(void (^ __nullable)(UIAlertAction * _Nullable action, NSInteger indexOfAction))handler {
+-(nonnull UIAlertController *)hrAlertWithTitle:(nullable NSString *)title
+                                       message:(nullable NSString *)message
+                                 buttonsTitles:(nullable NSArray<NSString *> *)buttonTitles
+                                    andHandler:(void (^ __nullable)(UIAlertAction * _Nullable action, NSInteger indexOfAction))handler {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
                                                                       preferredStyle:UIAlertControllerStyleAlert];
@@ -28,6 +28,18 @@
                                                        }];
         [alertController addAction:action];
     }
+    return alertController;
+}
+
+
+-(void)hrShowAlertWithTitle:(nullable NSString *)title
+                    message:(nullable NSString *)message
+              buttonsTitles:(NSArray<NSString *> *)buttonTitles
+                 andHandler:(void (^ __nullable)(UIAlertAction * _Nullable action, NSInteger indexOfAction))handler {
+    UIAlertController *alertController = [self hrAlertWithTitle:title
+                                                        message:message
+                                                  buttonsTitles:buttonTitles
+                                                     andHandler:handler];
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
