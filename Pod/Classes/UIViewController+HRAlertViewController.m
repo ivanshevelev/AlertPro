@@ -167,18 +167,19 @@
                      completion:nil];
 }
 
-#pragma mark - Private
-
 -(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
                                          message:(NSString *)message
                                    buttonsTitles:(NSArray *)titles
-                                 andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+                           popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                      sourceView:(UIView *)sourceView
+                                andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
     for (NSString *title in titles) {
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:title
-                                                              style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                                              style:UIAlertActionStyleDefault
+                                                            handler:^(UIAlertAction * _Nonnull action) {
                                                                   if (handler) {
                                                                       handler([alertController.actions indexOfObject:action], action.title);
                                                                   }
@@ -190,19 +191,25 @@
         [alertController setModalPresentationStyle:UIModalPresentationPopover];
         UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
         if (popPresenter) {
-            CGRect rect = self.view.frame;
-            
-            rect.origin.x = self.view.frame.size.width / 2 - 100;
-            rect.origin.y = self.view.frame.size.height / 2 - 100;
-            rect.size.width = 200;
-            rect.size.height = 200;
-            popPresenter.sourceView = self.view;
-            popPresenter.sourceRect = rect;
-            popPresenter.permittedArrowDirections = UIPopoverArrowDirectionUnknown;
-            [popPresenter setPermittedArrowDirections:0];
+            popPresenter.sourceView = sourceView;
+            popPresenter.permittedArrowDirections = direction;
         }
     }
     return alertController;
+}
+
+#pragma mark - Private
+
+-(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
+                                         message:(NSString *)message
+                                   buttonsTitles:(NSArray *)titles
+                                 andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+    return [self hrAlertControllerWithTitle:title
+                                    message:message
+                              buttonsTitles:titles
+                      popoverArrowDirection:UIPopoverArrowDirectionUnknown
+                                 sourceView:self.view
+                           andActionHandler:handler];
 }
 
 -(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
