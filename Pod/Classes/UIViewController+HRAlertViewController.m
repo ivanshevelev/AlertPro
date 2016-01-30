@@ -167,11 +167,29 @@
                      completion:nil];
 }
 
+-(void)hrShowActionSheetWithoutCancelWithTitles:(nullable NSArray<NSString *> *)titles
+                          popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                     sourceView:(nullable UIView *)sourceView
+                                     sourceRect:(CGRect)rect
+                                  actionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+    UIAlertController *alertController = [self hrAlertControllerWithTitle:nil
+                                                                  message:nil
+                                                            buttonsTitles:titles
+                                                    popoverArrowDirection:direction
+                                                               sourceView:sourceView
+                                                               sourceRect:rect
+                                                         andActionHandler:handler];
+    [self presentViewController:alertController
+                       animated:YES
+                     completion:nil];
+}
+
 -(UIAlertController *)hrAlertControllerWithTitle:(NSString *)title
                                          message:(NSString *)message
                                    buttonsTitles:(NSArray *)titles
                            popoverArrowDirection:(UIPopoverArrowDirection)direction
                                       sourceView:(UIView *)sourceView
+                                      sourceRect:(CGRect)sourceRect
                                 andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
@@ -192,6 +210,7 @@
         UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
         if (popPresenter) {
             popPresenter.sourceView = sourceView;
+            popPresenter.sourceRect = sourceRect;
             popPresenter.permittedArrowDirections = direction;
         }
     }
@@ -204,11 +223,13 @@
                                          message:(NSString *)message
                                    buttonsTitles:(NSArray *)titles
                                  andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler {
+    CGRect rect = CGRectMake(self.view.frame.size.width / 2 - 100, self.view.frame.size.height / 2 - 100, 200, 200);
     return [self hrAlertControllerWithTitle:title
                                     message:message
                               buttonsTitles:titles
-                      popoverArrowDirection:UIPopoverArrowDirectionUnknown
+                      popoverArrowDirection:0 //Apple. WTF with u?
                                  sourceView:self.view
+                                 sourceRect:rect
                            andActionHandler:handler];
 }
 

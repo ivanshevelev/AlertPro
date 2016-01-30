@@ -230,11 +230,13 @@
  *  @param titles     NSArray<NSString *> * with titles of buttons.
  *  @param direction  Arrow Direction in popover.
  *  @param sourceView Source View in popover.
+ *  @param sourceView Source Rect in popover.
  *  @param handler    Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
  */
 -(void)hrShowActionSheetWithoutCancelWithTitles:(nullable NSArray<NSString *> *)titles
                           popoverArrowDirection:(UIPopoverArrowDirection)direction
                                      sourceView:(nullable UIView *)sourceView
+                                     sourceRect:(CGRect)rect
                                   actionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
 
 /**
@@ -245,15 +247,17 @@
  *  @param titles     NSArray<NSString *> * with titles of buttons.
  *  @param direction  Arrow Direction in popover.
  *  @param sourceView Source View in popover.
+ *  @param sourceRect Source Rect in popover.
  *  @param handler    Block, which called if buttons in action sheet is tapped. 2 params: action of button and index of button.
  *
  *  @return UIAlertController instance.
  */
 -(nonnull UIAlertController *)hrAlertControllerWithTitle:(nullable NSString *)title
-                                         message:(nullable NSString *)message
-                                   buttonsTitles:(nullable NSArray *)titles
-                           popoverArrowDirection:(UIPopoverArrowDirection)direction
-                                      sourceView:(nullable UIView *)sourceView
-                                andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
+                                                 message:(nullable NSString *)message
+                                           buttonsTitles:(nullable NSArray *)titles
+                                   popoverArrowDirection:(UIPopoverArrowDirection)direction
+                                              sourceView:(nullable UIView *)sourceView
+                                              sourceRect:(CGRect)rect
+                                        andActionHandler:(nullable void(^)(NSInteger indexOfAction, NSString * _Nonnull title))handler;
 
 @end
