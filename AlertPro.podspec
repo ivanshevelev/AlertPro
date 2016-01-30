@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AlertPro"
-  s.version          = "0.1.1"
+  s.version          = "1.0"
   s.summary          = "UIViewController category for easy showing UIAlertController."
 
   s.homepage         = "https://github.com/ivanshevelev/AlertPro"
