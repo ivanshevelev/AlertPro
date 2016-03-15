@@ -8,7 +8,7 @@
 
 @import XCTest;
 
-#import "UIViewController+HRAlertViewController.h"
+#import <AlertPro/UIViewController+HRAlertViewController.h>
 
 @interface Tests : XCTestCase
 
