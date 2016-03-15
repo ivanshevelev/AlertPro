@@ -24,7 +24,7 @@
     self.viewController = [[UIViewController alloc] init];
 }
 
--(void)testActionSheetCreating {
+-(void)testAlertCreating {
     
     NSString *title = @"Title";
     
@@ -50,6 +50,49 @@
         NSString *actionTitle = buttonTitles[i];
         XCTAssert([action.title isEqualToString:actionTitle], @"Action titles cant be not equal");
     }
+}
+
+-(void)testActionSheetCreating {
+    
+    NSString *title = @"Title";
+    NSString *message = @"Message";
+    
+    NSArray *buttonTitles = @[@"1", @"2", @"3"];
+    
+    void(^handler)(NSInteger, NSString *) = ^void(NSInteger indexOfAction, NSString *title) {
+        
+    };
+    
+    UIPopoverArrowDirection direction = UIPopoverArrowDirectionDown;
+    
+    UIView *sourceView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+    
+    UIAlertController *alertController = [self.viewController hrAlertControllerWithTitle:title
+                                                                                 message:message
+                                                                           buttonsTitles:buttonTitles
+                                                                   popoverArrowDirection:direction
+                                                                              sourceView:sourceView
+                                                                              sourceRect:sourceView.frame
+                                                                        andActionHandler:handler];
+    
+    XCTAssert(alertController.title == title, @"Titles cant be not equal");
+    XCTAssert(alertController.message == message, @"Messages cant be not equal");
+    XCTAssert(alertController.actions.count == buttonTitles.count, @"Count of actions cant be not equal");
+    
+    for (NSUInteger i = 0; i < alertController.actions.count; i++) {
+        UIAlertAction *action = alertController.actions[i];
+        NSString *actionTitle = buttonTitles[i];
+        XCTAssert([action.title isEqualToString:actionTitle], @"Action titles cant be not equal");
+    }
+    
+    UIPopoverPresentationController *popoverPresentationController = alertController.popoverPresentationController;
+    
+    if (popoverPresentationController) {
+        XCTAssert(alertController.popoverPresentationController.permittedArrowDirections == direction);
+        XCTAssert(alertController.popoverPresentationController.sourceView == sourceView);
+        XCTAssert(CGRectEqualToRect(alertController.popoverPresentationController.sourceRect, sourceView.frame));
+    }
+    
 }
 
 @end
