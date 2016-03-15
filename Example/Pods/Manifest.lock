@@ -1,14 +1,14 @@
 PODS:
-  - AlertPro (0.1.0)
+  - AlertPro (1.0)
 
 DEPENDENCIES:
   - AlertPro (from `../`)
 
 EXTERNAL SOURCES:
   AlertPro:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AlertPro: c22b6b82d3f7b076c3d56cbe8481904301137134
+  AlertPro: 68052b766d16e9c55b640d222463354e6f0bcb20
 
 COCOAPODS: 0.39.0

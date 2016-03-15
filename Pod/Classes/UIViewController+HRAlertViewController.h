@@ -16,6 +16,22 @@
 @interface UIViewController (HRAlertView)
 
 /**
+ *  Method for creating UIAlertController with AlertStyle.
+ *
+ *  @param title        Title property in alert.
+ *  @param message      Description property in alert.
+ *  @param buttonTitles NSArray<NSString *> * with titles of buttons.
+ *  @param handler      Block, which called if buttons in alert is tapped. 2 params: action of button and index of button.
+ *
+ *  @return UIAlertController instance.
+ *
+ */
+-(nonnull UIAlertController *)hrAlertWithTitle:(nullable NSString *)title
+                                       message:(nullable NSString *)message
+                                 buttonsTitles:(nullable NSArray<NSString *> *)buttonTitles
+                                    andHandler:(void (^ __nullable)(UIAlertAction * _Nullable action, NSInteger indexOfAction))handler;
+
+/**
  *  Method for showing UIAlertController with AlertStyle.
  *
  *  @param title        Title property in alert.

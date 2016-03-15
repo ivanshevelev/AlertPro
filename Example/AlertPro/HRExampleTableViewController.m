@@ -8,7 +8,7 @@
 
 #import "HRExampleTableViewController.h"
 
-#import "UIViewController+HRAlertViewController.h"
+#import <AlertPro/UIViewController+HRAlertViewController.h>
 
 static NSString * const kHRExampleTableViewControllerErrorDomain = @"com.hirerussians.alertPro.exampleTableViewController.errorDomain";
 
