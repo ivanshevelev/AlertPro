@@ -218,6 +218,7 @@
     }
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+#ifdef TARGET_OS_IPHONE
         [alertController setModalPresentationStyle:UIModalPresentationPopover];
         UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
         if (popPresenter) {
@@ -225,6 +226,7 @@
             popPresenter.sourceRect = sourceRect;
             popPresenter.permittedArrowDirections = direction;
         }
+#endif
     }
     return alertController;
 }
